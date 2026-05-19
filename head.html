@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width,initial-scale=1.0">
+	<title>Évènements</title>
+	<style>
+		body {
+			font-size: large;
+			font-family: monospace;
+		}
+
+		p {
+			text-align: justify;
+			text-indent: 3ex;
+		}
+
+		/* ///////////////////////// */
+		/*  */
+		body.blbl {
+			max-width: 70ex;
+			height: 100vh;
+			margin: auto;
+			padding: 1ex;
+			/* display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: flex-start; */
+			/* justify-items: flex-start; */
+			/* gap: 1ex; */
+		}
+
+		.bl {
+			/* max-width: 50ex; */
+			border-left: solid 1ex #3885f4;
+			padding: 0 0 0 1ex;
+			margin: 2ex 0;
+		}
+
+		body.lines {
+			max-width: 110ex;
+			margin: auto;
+		}
+
+		.line {
+			display: grid;
+			grid-template-columns: 40ex 1fr;
+			border: solid .5ex #3885f4;
+			margin: 2ex 0;
+			padding: 1ex;
+			justify-content: start;
+
+			&>*>:first-child {
+				margin-top: 0;
+			}
+
+			h2 {
+				font-size: inherit;
+			}
+		}
+
+		.notes {
+			border-left: solid .5ex #3885f4;
+			padding-left: 1ex;
+		}
+	</style>
+</head>

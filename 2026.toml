@@ -1,0 +1,46 @@
+[[event]]
+title = "Manifestation en solidarité du peuple Palestinien"
+date = 2026-04-28T10:30:00+02:00
+location = "Place Jean-Jaurès, Troyes"
+notes = [
+  "Le 30 mars de chaque année est une journée particulière en Palestine et pour tou.te.s les Palestinien.ne.s qu’ils vivent en Palestine, dans les camps de réfugié.e.s ou dans la diaspora dans le monde entier.",
+  "C’est la « journée de la terre » commémorée depuis le 30 mars 1976, jour où la police israélienne a tiré sur des Palestiniens qui manifestaient contre la confiscation de leur terre. Bilan 6 morts, des dizaines de blessés et des centaines de personnes incarcérées.",
+  "Cette journée de mobilisation est le symbole d’un peuple attaché à sa terre.",
+  "Au niveau national un appel à la mobilisation dans les territoires est  impulsé par 90 organisations le 28 mars prochain.",
+  "@Collectif aubois pour la paix",
+]
+
+[[event]]
+"title" = "Journée internationale de la sécurité et de la santé au travail"
+"date" = 2026-04-28T11:00:00+02:00
+"location" = "Devant le MEDEF, Place Casimir Perier, Troyes"
+"notes" = [
+  "Il sera suivi par un barbecue fraternel devant le syndicat des cheminots de Troyes (devant la gare).",
+  "https://www.cgtud10.fr/actualites/c/0/i/96079644/28-avril-rassemblement-11h-devant-le-medef-stop-aux-morts-au-travail",
+]
+
+[[event]]
+title = "Présentation du livre TSEDEK!"
+location = "Maison des syndicats, 2A Boulevard du 1er R.A.M, Troyes"
+date = 2026-04-28T18:30:00+02:00
+notes = [
+  "Fondé quelques mois avant le 7 octobre 2023, le collectif juif décolonial Tsedek! s'est depuis retrouvé propulsé au cœur des enjeux qui animent le débat politique français, dans un contexte marqué par le génocide à Gaza, la radicalisation autoritaire de l'État et une instrumentalisation toujours plus grande de la lutte contre l'antisémitisme à des fins répressives et racistes.",
+  "Dans ce livre, le collectif dresse un premier bilan de deux ans de luttes, et explore les moyens de renouer avec une judéité révolutionnaire et émancipatrice face à la fascisation du monde.",
+  "@Collectif Louise Michelle, Tsedek! et les passeurs de textes",
+]
+
+[[event]]
+"title" = "Manif 1er mai"
+"location" = "Place Jean Jaurès, Troyes"
+"date" = 2026-05-01T10:00:00+02:00
+"orga" = "Syndicats ..."
+"notes" = []
+
+#   [[event]]
+#     "title": "",
+#     "location": "",
+#     "date": "",
+#     "orga": "",
+#     "notes": []
+#   }
+# ]
