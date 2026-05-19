@@ -2,15 +2,21 @@ import { HTML, html, htmlAttr } from "@huguesguilleus/blogger/html";
 import * as TOML from "@std/toml";
 
 type Data = {
-	petition: {
+	social: {
 		title: string;
-		notes: string[];
+		logo: string;
+		url: string;
 	}[];
 	event: {
 		title: string;
 		date: Date;
 		location: string;
 		notes: string[];
+	}[];
+	petition: {
+		title: string;
+		notes: string[];
+		url: string;
 	}[];
 };
 
@@ -30,9 +36,21 @@ await Deno.writeTextFile(
 		"body.withgrid",
 		html(
 			"header",
-			html("h1", "Actions dans l'Aube"),
+			html("h1", "LFI dans l'Aube"),
 			html("i", "Généré le ", fmtDate()),
 		),
+		// // //
+		!!data.social.length && [
+			html(
+				"div.blocks",
+				data.social.map((social) =>
+					html(
+						`a.link href='${social.url}'`,
+						html("div", social.title),
+					)
+				),
+			),
+		],
 		// // //
 		!!data.event.length && [
 			html("h2", "Les évènements"),
@@ -45,11 +63,6 @@ await Deno.writeTextFile(
 						html("h3", event.title),
 						!!event.date && html("div.bold", fmtDate(event.date)),
 						!!event.location && html("div", event.location),
-						// ...(event.notes || []).map((note) =>
-						// 	/^https?:\/\//.test(note)
-						// 		? htmlAttr`a href='${note}'`(note)
-						// 		: html("p", note)
-						// ),
 						notes(event.notes),
 					)
 				),
@@ -80,7 +93,7 @@ function fmtDate(date = new Date()): string {
 	}).format(date);
 }
 
-function notes(lines: string[] = []): HTML {
+function notes(lines: string[] = []): HTML[] {
 	return lines.map((line) =>
 		/^https?:\/\//.test(line)
 			? htmlAttr`a href='${line}'`(line)

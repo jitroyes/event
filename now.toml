@@ -1,5 +1,31 @@
-[social]
-mail = "jeunesinsoumistroyes@gmail.com"
+[[social]]
+title = "Mail"
+url = "mailto:jeunesinsoumistroyes@gmail.com"
+
+[[social]]
+title = "Instagram"
+url = "https://instagram.com/ji_troyes"
+
+[[social]]
+title = "Bluesky"
+url = "https://bsky.app/profile/jitroyes.bsky.social"
+
+[[social]]
+title = "X"
+url = "https://x.com/JeunesFITroyes"
+
+[[social]]
+title = "GitHub"
+url = "https://github.com/jitroyes/"
+
+[[social]]
+title = "Facebook"
+url = "https://www.facebook.com/people/Jitroyes-Lfi/61571488727153/"
+
+[[social]]
+title = "YouTube"
+url = "https://www.youtube.com/@JITroyes"
+
 
 [[event]]
 title = "Manifestation en solidarité du peuple Palestinien"
