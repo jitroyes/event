@@ -7,52 +7,35 @@ await Deno.mkdir("public", { recursive: true });
 await Deno.writeTextFile(
   "public/2026.html",
   HEAD + html(
-    "body.blbl",
-    html("h1", "Évènements"),
-    ev2026.filter((event) => event.title).map((event) =>
-      html(
-        "div.bl",
-        html("h2", event.title),
-        !!event.date && html("div", fmtDate(event.date)),
-        !!event.location && html("div", event.location),
-        ...(event.notes || []).map((note) =>
-          /^https?:\/\//.test(note)
-            ? { h: `<div><a href='${note}'>${note}</a></div>` }
-            : html("p", note)
-        ),
-      )
+    "body.withgrid",
+    html(
+      "header",
+      html("h1", "Actions dans l'Aube"),
+      html("i", "Généré le ", fmtDate()),
     ),
-    html("div", "Généré le ", fmtDate()),
-  ).h,
-);
-
-await Deno.writeTextFile(
-  "public/2026l.html",
-  HEAD + html(
-    "body.lines",
-    html("h1", "Évènements"),
-    ev2026.filter((event) => event.title).map((event) =>
-      html(
-        "div.line",
+    !!ev2026.length && html("h2", "Actions"),
+    html("div.grid2"),
+    html(
+      `div.grid2`,
+      ev2026.filter((event) => event.title).map((event) =>
         html(
-          "div",
-          html("h2", event.title),
-          !!event.date && html("div", fmtDate(event.date)),
-          !!event.location && html("div", event.location),
-        ),
-        html(
-          "div.notes",
+          "div.bl",
+          html("div.type", "// évènement //"),
+          html("h3", event.title),
+          !!event.date && html("div.bold", fmtDate(event.date)),
+          !!event.location && html("div.bold", event.location),
           ...(event.notes || []).map((note) =>
             /^https?:\/\//.test(note)
               ? { h: `<div><a href='${note}'>${note}</a></div>` }
               : html("p", note)
           ),
-        ),
-      )
+        )
+      ),
     ),
-    html("div", "Généré le ", fmtDate()),
   ).h,
 );
+
+// https://eci.ec.europa.eu/055/public/?lg=fr
 
 function fmtDate(str: string = Date()): string {
   return Intl.DateTimeFormat("fr", {
