@@ -1,5 +1,6 @@
 {
   "imports": {
+    "@html": "jsr:@huguesguilleus/blogger@^0.1.0./html.ts",
     "@std/html": "jsr:@std/html@^1.0.6"
   }
 }
