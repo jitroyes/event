@@ -1,3 +1,6 @@
+[social]
+mail = "jeunesinsoumistroyes@gmail.com"
+
 [[event]]
 title = "Manifestation en solidarité du peuple Palestinien"
 date = 2026-04-28T10:30:00+02:00
@@ -44,3 +47,10 @@ notes = [
 #     "notes": []
 #   }
 # ]
+
+[[petition]]
+title = "Violations des droits de l’homme par Israël"
+notes = [
+  "Selon la Commission européenne, l’État d’Israël est responsable d’un nombre sans précédent de morts et de blessés parmi les civils, de déplacements à grande échelle de la population et de la destruction systématique des hôpitaux et des installations médicales à Gaza. Israël a également mis en place un blocus de l’aide humanitaire, qui pourrait s’apparenter à un recours à la famine comme méthode de guerre. Israël enfreint de multiples règles et obligations prévues par le droit international, et ne prévient pas le crime de génocide, contrairement à ce qui a été ordonné par la Cour internationale de justice.",
+  "https://eci.ec.europa.eu/055/public/?lg=fr",
+]
