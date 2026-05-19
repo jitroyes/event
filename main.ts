@@ -59,10 +59,13 @@ await Deno.writeTextFile(
 				data.event.filter((event) => event.title).map((event) =>
 					html(
 						"div.bl.event",
-						html("div.type", "// évènement //"),
 						html("h3", event.title),
-						!!event.date && html("div.bold", fmtDate(event.date)),
-						!!event.location && html("div", event.location),
+						html(
+							"div.lb",
+							!!event.date && html("div", fmtDate(event.date)),
+							html("hr"),
+							!!event.location && html("div", event.location),
+						),
 						notes(event.notes),
 					)
 				),
